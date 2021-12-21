@@ -1,0 +1,230 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Slabo 27px', serif;
+}
+/* header and background */
+.header{
+  min-height: 100vh;
+  width: 100%;
+  background-image:url("background2.jpg") ;
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  position: relative;
+ 
+ }
+/* nav visit us to know more*/
+
+  nav {
+      display: flex;
+      padding: 2% 6%;
+      justify-content: space-between;
+      align-items: center;
+
+  }
+  nav img {
+    width: 150px;
+  }
+  .nav-links {
+    flex: 1;
+    text-align: right;
+  }
+  .nav-link ul li {
+      list-style: none;
+      display: inline-block;
+      padding: 10px 14px;
+      position: relative;
+  }
+  .nav-link ul li a{
+    color: rgb(45, 7, 70);
+    text-decoration: none;
+    font: size 15px; 
+
+  }
+  .nav-link ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background:rgb(29, 70, 2);
+    display: block;
+    margin:auto ;
+    transition: 0.5s ;
+  }
+.nav-link ul li:hover::after{
+  width: 100%;
+}
+/* the paragraph contente */
+.text-box {
+  width:90%;
+  color:rgb(64, 5, 82);
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+
+}
+.text-box h1{
+  font-size: 63px;
+}
+.text-box p {
+  margin: 10px 0 40px;
+  font-size: 16px;
+  color: black;
+}
+/* visit us links  button*/
+.hero-btn{
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(9, 71, 4);
+  border: 2px solid rgb(3, 59, 3);
+  padding: 12px 34px;
+  font-size: 15px ;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+
+}
+.hero-btn:hover{
+  border: 2px solid green;
+  background: green;
+  transition: 1s;
+}
+/* to display on mobile about for manu*/
+nav .fa{
+  display: none;
+}
+@media(max-width:700px){
+  .text-box h1{
+    font-size: 20px;
+  }
+  .nav-link ul li {
+    display: block ;
+  }
+  .nav-links{
+    position: absolute;
+    background: rgb(85, 12, 12);
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+  nav .fa {
+    display: block;
+    color: rgb(78, 6, 6);
+    margin: 10px;
+    font-size: 22px;
+    cursor:pointer ;
+  }
+  nav-links ul{
+    padding: 30px;
+
+  }
+}
+
+/*----------- foods ----------------*/
+
+.foods { 
+   width: 80%;
+   margin: auto;
+   text-align: center;
+   padding-top: 100px;
+}
+h1 {
+  font-size: 36;
+  font-weight: 600;
+  font-family: 'Courier New', Courier, monospace;
+}
+ p {
+color:rgb(47, 27, 119);
+font-size: 20px;
+font-weight: 500;
+line-height: 22px;
+padding: 10px;
+font-family: 'Courier New', Courier, monospace ;
+ }
+ /* foods row*/
+
+ .row {
+margin-top: 5%;
+display: flex;
+justify-content: space-between;
+ }
+ .food-col {
+ flex-basis: 31%;
+ background: #a1f7b4;
+ border-radius: 10px;
+ margin-bottom: 5%;
+ padding: 20px 12px;
+ box-sizing: border-box;
+ }
+ h3{
+text-align: center;
+font-weight: 600;
+margin: 10px 0;
+font-family: 'Courier New', Courier, monospace;
+
+ }
+ .food-col:hover{
+  box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+
+ }
+ @media(max-width: 700px){
+    .row {
+      flex-direction: column;
+    }
+ }
+/* This is food pictuers part */
+.Food-pic {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 20px;
+
+}
+.foodspic-col{
+  flex-basis: 32%;
+  border-radius:  10px;
+  margin-bottom: 30px;
+  position: relative;
+  left: 20;
+  right: 20;
+  overflow: hidden;
+}
+.foodspic-col img {
+  width: 100%;
+  padding: auto;
+}
+.layer{
+  background:transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+
+}
+.layer:hover {
+  background: rgba(79, 245, 79, 0.281);
+}
+.layer h3{
+width: 100;
+font-weight: 500;
+color: #fff;
+font-size: 26px;
+bottom: 0;
+left: 50%;
+transform:translateX(-50%);
+position: absolute;
+
+}
+
+
+ 
+

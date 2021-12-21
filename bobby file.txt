@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+  .header {
+    background-image: url("Yellow.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    position: relative;
+  }
+}
+.navbar-style {
+    box-shadow: black;
+}
+ul#micon .collapse navbar-collapse {
+    font-weight: bold;
+  } 
+.logo {
+  height: 120px;
+  padding: 2px 20px;
+}
+
+li a {
+    color:purple;
+}
