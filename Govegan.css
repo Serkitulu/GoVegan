@@ -3,19 +3,21 @@
   padding: 0;
   font-family: 'Montserrat', sans-serif;
   font-family: 'Slabo 27px', serif;
+ 
 }
 /* header and background */
 .header{
-  min-height: 100vh;
-  width: 100%;
-  background-image:url("background2.jpg") ;
+  min-height:100vh;
+  width: 110%;
+  background-image:url("background2.jpg");
   background-position: center;
   background-size: cover;
   height: 200px;
   position: relative;
- 
  }
-/* nav visit us to know more*/
+
+
+/* nav visit us to know more 
 
   nav {
       display: flex;
@@ -23,19 +25,43 @@
       justify-content: space-between;
       align-items: center;
 
+  } */
+  /* nav visit us to know more  new nav code */
+  nav{
+    top: 0;
+    left:0;
+    width: 90%;
+    height: 70px;
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(53, 8, 54);
+   
   }
+
+
+
   nav img {
-    width: 150px;
+    width: 100px;
   }
   .nav-links {
     flex: 1;
-    text-align: right;
+    text-align: right; 
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+   
   }
+ 
   .nav-link ul li {
       list-style: none;
       display: inline-block;
       padding: 10px 14px;
       position: relative;
+      background-color: rgb(130, 238, 179);
+   
   }
   .nav-link ul li a{
     color: rgb(45, 7, 70);
@@ -58,7 +84,7 @@
 /* the paragraph contente */
 .text-box {
   width:90%;
-  color:rgb(64, 5, 82);
+  color:rgb(80, 21, 92);
   position: absolute;
   top:50%;
   left:50%;
@@ -103,6 +129,7 @@ nav .fa{
   .nav-link ul li {
     display: block ;
   }
+
   .nav-links{
     position: absolute;
     background: rgb(85, 12, 12);
@@ -114,6 +141,7 @@ nav .fa{
     z-index: 2;
     transition: 1s;
   }
+
   nav .fa {
     display: block;
     color: rgb(78, 6, 6);
@@ -123,6 +151,7 @@ nav .fa{
   }
   nav-links ul{
     padding: 30px;
+    background-color: violet;
 
   }
 }
@@ -181,7 +210,7 @@ font-family: 'Courier New', Courier, monospace;
  }
 /* This is food pictuers part */
 .Food-pic {
-  width: 80%;
+  width: 100%;
   margin: auto;
   text-align: center;
   padding-top: 20px;
@@ -197,7 +226,7 @@ font-family: 'Courier New', Courier, monospace;
   overflow: hidden;
 }
 .foodspic-col img {
-  width: 100%;
+  width: 90%;
   padding: auto;
 }
 .layer{
@@ -207,8 +236,6 @@ font-family: 'Courier New', Courier, monospace;
   position: absolute;
   top: 0;
   left: 0;
-  
-
 }
 .layer:hover {
   background: rgba(79, 245, 79, 0.281);
@@ -222,9 +249,81 @@ bottom: 0;
 left: 50%;
 transform:translateX(-50%);
 position: absolute;
+/*  <!--footer--> */
+}
+footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: #2e1c35;
+  height:auto;
+  width: 100vw;
+  font-family: "open sans";
+  padding-top: 40px;
+  color:  #4124ad; 
+}
+/*  <!--footer containt--> */
 
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-content h6{
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+  
+}
+.footer-content p{
+  max-width: 500px;
+  margin: 10px auto ;
+  line-height: 28px;
+  font-size: 14px;
+
+}
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0rem 0;
+}
+.socials li{
+  margin: 0 10px;
+}
+.socials a{
+  text-decoration: none;
+  color: rgb(69, 48, 184);
+}
+.socials a i {
+  font-size: 1.1rem ;
+  transition: color .4s ease;
+}
+.socials a:hover i {
+  color: rgb(23, 82, 33);
+
+}
+.footer-bottom {
+  background: #2e1c35 ;
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer-bottom p{
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+.footer-bottom span{
+  text-transform:uppercase;
+  opacity: 4;
+  font-weight:100;
 }
 
 
- 
+
 
